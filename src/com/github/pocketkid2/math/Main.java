@@ -1,7 +1,22 @@
+package com.github.pocketkid2.math;
+
 import java.util.Arrays;
 
+/**
+ * @author Adam
+ *
+ *         This class contains the main program function, to test the features
+ *         of the other calculation classes.
+ */
 public class Main {
 
+	/**
+	 * This is executed when the program is started, either from Eclipse or from
+	 * running the JAR file.
+	 *
+	 * @param args
+	 *            Arguments from the command line. They do nothing.
+	 */
 	public static void main(final String[] args) {
 		// Test the combinatorics file
 		System.out.println("10! = " + Combinatorics.factorial(10));
