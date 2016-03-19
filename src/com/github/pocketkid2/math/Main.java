@@ -47,6 +47,36 @@ public class Main {
 			}
 		}
 		System.out.println("There were " + error + " errors in the fibonacci sequence calculator");
+
+		// Test the Euclid GCD algorithms
+		int a = 12;
+		int b = 30;
+
+		System.out.println(String.format("GCD (%d, %d) (divide) = %d", a, b, Euclid.gcd_divide(a, b)));
+		System.out.println(String.format("GCD (%d, %d) (subtract) = %d", a, b, Euclid.gcd_subtract(a, b)));
+		System.out.println(String.format("GCD (%d, %d) (recurse) = %d", a, b, Euclid.gcd_recurse(a, b)));
+
+		a = -60;
+		b = 90;
+
+		System.out.println(String.format("GCD (%d, %d) (divide) = %d", a, b, Euclid.gcd_divide(a, b)));
+		System.out.println(String.format("GCD (%d, %d) (subtract) = %d", a, b, Euclid.gcd_subtract(a, b)));
+		System.out.println(String.format("GCD (%d, %d) (recurse) = %d", a, b, Euclid.gcd_recurse(a, b)));
+
+		a = 0;
+		b = 1;
+
+		System.out.println(String.format("GCD (%d, %d) (divide) = %d", a, b, Euclid.gcd_divide(a, b)));
+		System.out.println(String.format("GCD (%d, %d) (subtract) = %d", a, b, Euclid.gcd_subtract(a, b)));
+		System.out.println(String.format("GCD (%d, %d) (recurse) = %d", a, b, Euclid.gcd_recurse(a, b)));
+
+		a = 133;
+		b = 91;
+
+		System.out.println(String.format("GCD (%d, %d) (divide) = %d", a, b, Euclid.gcd_divide(a, b)));
+		System.out.println(String.format("GCD (%d, %d) (subtract) = %d", a, b, Euclid.gcd_subtract(a, b)));
+		System.out.println(String.format("GCD (%d, %d) (recurse) = %d", a, b, Euclid.gcd_recurse(a, b)));
+
 	}
 
 }
